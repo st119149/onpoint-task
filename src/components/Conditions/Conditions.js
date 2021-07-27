@@ -1,6 +1,9 @@
 import React from 'react';
 
 import Popup from '../Popup/Popup';
+import Button from '../Button/Button';
+
+import './Conditions.scss';
 
 export default function Conditions() {
 
@@ -33,11 +36,13 @@ export default function Conditions() {
                             <div>Курс лечения от 7 дней до 1 мес.</div>
                         </div>
 
-                        <button className="button conditions__button"
-                            onClick={() => setPopupIsActive(true)}>
-                            <div className="button__arrow"><span></span></div>
-                            Подробнее
-                        </button>
+                  
+                        <div className="conditions__button">
+                            <Button
+                                textContent={'Подробнее'}
+                                onClickButton={() => setPopupIsActive(true)}
+                            />
+                        </div>
 
                     </div>
 

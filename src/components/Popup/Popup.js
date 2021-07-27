@@ -1,5 +1,8 @@
 import React from 'react';
 
+import './Popup.scss';
+
+
 export default function Popup({ isActive, onClickClose }) {
 
     const advantages = [

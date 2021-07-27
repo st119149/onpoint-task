@@ -5,6 +5,7 @@ import Promo from '../Promo/Promo';
 import Info from '../Info/Info';
 import Conditions from '../Conditions/Conditions';
 
+import './App.scss';
 
 export default function App() {
 

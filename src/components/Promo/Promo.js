@@ -1,5 +1,10 @@
 import React from 'react';
 
+import Button from '../Button/Button';
+
+import './Promo.scss';
+
+
 export default function Promo({ onClickNext }) {
 
     return (
@@ -9,14 +14,9 @@ export default function Promo({ onClickNext }) {
 
                     <h2 className="title">привет,</h2>
                     <h1 className="promo__title">это <span>не</span> коммерческое задание</h1>
-                    <button className="button promo__button"
-                        onClick={onClickNext}
-                    >
-                        <div className="button__arrow">
-                            <span></span>
-                        </div>
-                        Что дальше?
-                    </button>
+                    <div className="promo__button">
+                        <Button textContent={'Что дальше?'} onClickButton={onClickNext} />
+                    </div>
 
                 </div>
             </div>
