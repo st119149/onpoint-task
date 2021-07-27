@@ -34,14 +34,13 @@ export default function Popup({ isActive, onClickClose }) {
     }
 
 
-    const popupClassName = isActive ? "popup popup_active" : "popup";
     const overlayClassName = isActive ? "overlay popup_active" : "overlay";
 
     return (
         <>
             <div className={overlayClassName} onClick={onClickClose}>
 
-                <div className={popupClassName}>
+                <div className="popup">
                     <h2 className="title title_nowrap">преимущества</h2>
                     <h3 className="conditions__brend">brend<b>xy</b></h3>
 
