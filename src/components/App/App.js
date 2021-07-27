@@ -9,10 +9,6 @@ import './App.scss';
 
 export default function App() {
 
-
-
-
-
     const [slideIndex, setSlideIndex] = React.useState(0);
 
     const slider = React.useRef(null);
