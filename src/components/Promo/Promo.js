@@ -21,7 +21,6 @@ export default function Promo({ onClickNext }) {
                 </div>
             </div>
 
-
             <div className="promo__images">
                 <img src="img/promo/blue-1.png" alt="" />
                 <img src="img/promo/blue-2.png" alt="" />

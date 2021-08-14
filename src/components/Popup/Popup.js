@@ -2,7 +2,6 @@ import React from 'react';
 
 import './Popup.scss';
 
-
 export default function Popup({ isActive, onClickClose }) {
 
     const advantages = [
@@ -21,18 +20,14 @@ export default function Popup({ isActive, onClickClose }) {
     const [pageIndex, setPageIndex] = React.useState(0);
 
     const toNextPage = () => {
-
         if (pageIndex !== advantages.length - 1)
             setPageIndex(pageIndex + 1)
     }
 
     const toPrevPage = () => {
-
-
         if (pageIndex !== 0)
             setPageIndex(pageIndex - 1)
     }
-
 
     const overlayClassName = isActive ? "overlay popup_active" : "overlay";
 
@@ -63,6 +58,7 @@ export default function Popup({ isActive, onClickClose }) {
                         {Array.from({ length: advantages.length })
                             .map((item, index) =>
                                 <div
+                                    key={index}
                                     className={
                                         index === pageIndex ?
                                             "circle circle_active" :

@@ -9,10 +9,15 @@ import './App.scss';
 
 export default function App() {
 
+    React.useEffect(() => {
+        alert(`Приложение адаптировано под разрешение 1024x768. Перемещение по слайдам с помощью свайпа`)
+    }, []);
+
     const [slideIndex, setSlideIndex] = React.useState(0);
 
     const slider = React.useRef(null);
     const mainBg = React.useRef(null);
+
 
     let clientTouchStart = React.useRef(null);
 
@@ -38,7 +43,6 @@ export default function App() {
 
             setSlide(slideIndex + 1);
         }
-
     };
 
     const toPrevSlide = () => {
