@@ -18,9 +18,7 @@ export default function App() {
     const slider = React.useRef(null);
     const mainBg = React.useRef(null);
 
-
     let clientTouchStart = React.useRef(null);
-
 
     const slides = [
         <Promo onClickNext={() => setSlide(1)} />,
@@ -51,7 +49,6 @@ export default function App() {
         }
     };
 
-
     // const handleTouchMove = e => {
     //     if (e.touches[e.touches.length - 1].clientX % 2 === 0
     //         && slideIndex !== 2
@@ -64,7 +61,6 @@ export default function App() {
     //         });
 
     //         mainBg.current.style = `left: ${-(distance + 100 * slideIndex)}%`;
-
     //     }
 
     // }
@@ -88,8 +84,6 @@ export default function App() {
         }
     }
 
-
-
     return (
         <div className="app">
 
@@ -112,13 +106,7 @@ export default function App() {
 
             </div>
 
-
-
-
-
             <img className="app__logo" src="img/onpoint-logo.png" alt="onpoint-logo" />
-
-
         </div>
     )
 }
