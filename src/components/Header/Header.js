@@ -7,21 +7,13 @@ export default function Header({ onClickHome }) {
     return (
         <header>
             <div className="container">
-
                 <ul className="nav">
-                    <li className="nav__link">
-                        <a
-                            onClick={onClickHome}
-                            href="#">
-                            <img src="img/icon-home.png" alt="home-logo" />
-                        </a>
+                    <li className="nav__link" onClick={onClickHome}>
+                        <img src="img/icon-home.png" alt="home-logo" />
                     </li>
-                    <li className="nav__link">
-                        <a href="#">project</a>
-                    </li>
+                    <li className="nav__link">project</li>
                 </ul>
             </div>
-
         </header>
     )
 }
